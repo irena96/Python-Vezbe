@@ -6,7 +6,11 @@
 
 # Cilj ove vezbe je da pokaze razliku izmedju simbolickog(scypy modul) i nesimbolickog programiranja (math modul).
 
-import scypy            # importuje scypy modul
+import sympy            # importuje scypy modul
 import math             # importyuje math modul
 
+xmath = math.sqrt(20)   #koren dobijen standardnom python funkcijom
+xscy = sympy.sqrt(20)   #koren dobijen pomocu sympy biblioteke
 
+print xmath  #stampa standard
+print xscy   #stampa sympy
